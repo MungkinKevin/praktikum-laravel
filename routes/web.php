@@ -24,3 +24,6 @@ use App\Http\Controllers\PastaController;
     Route::get('/pasta/about', [PastaController::class,'about']);
     Route::get('/pasta/article/{id}', [PastaController::class,'article']);
     Route::get('/pasta/contact', [PastaController::class,'contact']);
+
+    Auth::routes();
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
