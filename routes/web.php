@@ -12,15 +12,15 @@ use App\Http\Controllers\PastaController;
     Route::get('/hello', function () {
         return 'Hello World';
     }); 
-
+    */
     Route::get('/hello', [WelcomeController::class,'hello']);
     Route::get('/', [PageController::class,'index']);
     Route::get('/about', [PageController::class,'about']);
-    Route::get('/article/{id}', [PageController::class,'article']);*/
+    Route::get('/article/{id}', [PageController::class,'article']);
 
     /**==========PASTAAAA=============== */
 
-    Route::get('/', [PastaController::class,'index']);
-    Route::get('/about', [PastaController::class,'about']);
-    Route::get('/article/{id}', [PastaController::class,'article']);
-    Route::get('/contact', [PastaController::class,'contact']);
+    Route::get('/pasta', [PastaController::class,'index']);
+    Route::get('/pasta/about', [PastaController::class,'about']);
+    Route::get('/pasta/article/{id}', [PastaController::class,'article']);
+    Route::get('/pasta/contact', [PastaController::class,'contact']);

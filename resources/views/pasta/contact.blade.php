@@ -2,26 +2,26 @@
     <head>
         <title>Pasta</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script src="../js/jquery.js"></script> 
-	    <script src="../js/jquery.glide.js"></script>
+        <script src="{{ asset('js/jquery.js') }}"></script> 
+	    <script src="{{ asset('js/jquery.glide.js') }}"></script>
     
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/animate.css">
-        <script type="text/javascript" src="../js/MyJQ.js"></script>
-        <script src="../js/jquery.localScroll.min.js" type="text/javascript"></script>
-        <script src="../js/jquery.scrollTo.min.js" type="text/javascript"></script> 
-        <script src="../js/wow.min.js" type="text/javascript"></script> 
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+        <script type="text/javascript" src="{{ asset('js/MyJQ.js') }}"></script>
+        <script src="{{ asset('js/jquery.localScroll.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/jquery.scrollTo.min.js') }}" type="text/javascript"></script> 
+        <script src="{{ asset('js/wow.min.js') }}" type="text/javascript"></script> 
     </head>
     <body>
         <div class="headerwrapper">
 	        <div id="header" class="container">
-                <div class="logo"> <a href="#"><img src="../images/LOGO.png" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
+                <div class="logo"> <a href="#"><img src="{{ asset('images/LOGO.png') }}" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
                     <nav>
                         <ul id="navigations">
-                            <li><a href="http://127.0.0.1:8000/">HOME</a></li>
-                            <li> <a href="http://127.0.0.1:8000/about">ABOUT</a></li>
-                            <li><a href="http://127.0.0.1:8000/article/1">ARTICLE</a></li>
-                            <li><a href="http://127.0.0.1:8000/contact">CONTACT</a></li>
+                            <li><a href="http://127.0.0.1:8000/pasta">HOME</a></li>
+                            <li> <a href="http://127.0.0.1:8000/pasta/about">ABOUT</a></li>
+                            <li><a href="http://127.0.0.1:8000/pasta/article/1">ARTICLE</a></li>
+                            <li><a href="http://127.0.0.1:8000/pasta/contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div> <!--end of header-->
@@ -35,7 +35,7 @@
                             <p class="wow fadeInUp" data-wow-delay="0.8s">
                                 Tidak ada kontak.
                             </p>
-                            <img src="images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
+                            <img src="{{asset ('/images/slideimg.png')}}" width="317" height="256" class="wow fadeInRight" 
                             data-wow-delay="0.8s" alt="slide1img"> 
                         </li>
                         <li class="slide">
