@@ -8,7 +8,7 @@ class PastaController extends Controller
 {
     public function index()
     {
-        return view('pasta.index');
+        return view('pasta.home');
     }
 
     public function about()

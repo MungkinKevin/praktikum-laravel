@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Pasta</title>
+        <title>@yield('title', 'Pasta')</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script src="../js/jquery.js"></script> 
 	    <script src="../js/jquery.glide.js"></script>
@@ -31,33 +31,16 @@
                 <div class="slider">
                     <ul class="slides">
                         <li class="slide">
-                            <h5 class="wow fadeInDown" data-wow-delay="0.8s">HALO!</h5>
-                            <p class="wow fadeInUp" data-wow-delay="0.8s">Hi, selamat datang di website laravel</p>
-                            <img src="{{asset ('/images/slideimg.png')}}" width="317" height="256" class="wow fadeInRight" 
-                            data-wow-delay="0.8s" alt="slide1img"> 
-                        </li>
-                        <li class="slide">
-                            <h5 class="wow fadeInDown" data-wow-delay="0.8s">What is Pasta ? </h5>
-                            <p class="wow fadeInUp" data-wow-delay="0.8s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                            electronic typesetting</p>
-                            <img src="images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
-                            data-wow-delay="0.8s" alt="slideimg2"> 
-                        </li>
-                        <li class="slide">
-                            <h5 class="wow fadeInDown" data-wow-delay="0.8s">What is Pasta ? </h5>
-                            <p class="wow fadeInUp" data-wow-delay="0.8s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                            type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                            also the leap into 
-                            electronic typesetting</p>
-                            <img src="images/slideimg.png" width="317" height="256" class="wow fadeInRight" 
-                            data-wow-delay="0.8s" alt="slideimg2"> 
+                            @yield('content') 
                         </li>
                     </ul>
                 </div>
             </div> <!-- End of Slider-->
         </div> <!-- end of sliderwrapper-->
+        <div class="copyrightswrapper">
+            <div id="copyrights" class="container">
+            <p>Nothing here</p>
+            </div> <!-- end of copyrights-->
+        </div> <!-- end of website-->
     </body>
 </html>
